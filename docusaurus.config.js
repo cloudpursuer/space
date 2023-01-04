@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Cloudchaser',
   tagline: '前へススメ！',
-  url: 'https://space-khaki-nine.vercel.app/',
+  url: 'https://vercel.com/cloudpursuer/space',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
