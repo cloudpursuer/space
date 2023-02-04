@@ -92,10 +92,10 @@ const config = {
             //target: '_blank',
           },
           {
-            to: 'links',
+            to: 'friends',
             // "to" 和 "href" 只应该用一个
             // href: 'https://www.facebook.com',
-            label: 'Links',
+            label: 'Friends',
             // Only one of "label" or "html" should be used
             // html: '<b>引言</b>'
             position: 'right',
