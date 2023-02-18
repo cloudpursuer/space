@@ -11,7 +11,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('header header--primary', styles.heroBanner)}>
       <div className="container">
         <img src={avatarImageUrl} className='myavatar'/>
         <h1 className="hero__title">{siteConfig.title}</h1>
