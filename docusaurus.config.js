@@ -78,7 +78,7 @@ const config = {
             type: 'doc',
             docId: 'default',
             position: 'right',
-            label: 'Wiki',
+            label: 'Notes',
           },
           {
             to: 'about',

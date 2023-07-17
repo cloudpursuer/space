@@ -23,11 +23,11 @@ const ContactList = [
     ),
   },
   {
-    title: 'Weibo',
+    title: 'Steam',
     //Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     link: (
       <>
-        https://weibo.com/7358040653/profile
+        https://steamcommunity.com/profiles/76561198979608537/
       </>
     ),
   },

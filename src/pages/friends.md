@@ -1,3 +1,3 @@
 # 友链
 
-Makiori：[运行异常 | Makiori&#39;s blog](https://blog.makiori.moe/)
+Makiori：[微风轻拂 | Makiori's blog](https://blog.makiori.moe/)
