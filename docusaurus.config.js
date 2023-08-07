@@ -76,7 +76,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             type: 'doc',
-            docId: 'default',
+            docId: 'Default',
             position: 'right',
             label: 'Notes',
           },
