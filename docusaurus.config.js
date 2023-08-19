@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -33,11 +35,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          //path:"docs",
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
-            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -49,6 +54,16 @@ const config = {
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: '/katex/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig:
@@ -67,12 +82,6 @@ const config = {
         },*/
         
         items: [
-          /*{
-            type: 'doc',
-            docId: 'default',
-            position: 'left',
-            label: 'Tutorial',
-          },*/
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             type: 'doc',
@@ -153,7 +162,7 @@ const config = {
           },
         ],*/
         copyright: `Copyright © ${new Date().getFullYear()} Cloudchaser. Built with Docusaurus.`,
-      },
+      },    
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
